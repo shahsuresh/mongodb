@@ -84,7 +84,7 @@ use("relation");
 //? create "students" table and insert some data
 
 // db.students.insertOne({
-//   name: "Rina",
+//   name: "Ranjan",
 //   address: "Kalanki",
 //   email: "rina@gmail.com",
 //   enrolledCourseIds: [
@@ -103,25 +103,50 @@ use("relation");
 //   ],
 // });
 
-db.students.aggregate([
+// db.students.aggregate([
+//   {
+//     $match: {},
+//   },
+//   {
+//     $lookup: {
+//       from: "courses",
+//       localField: "enrolledCourseIds",
+//       foreignField: "_id",
+//       as: "StudentCourseDetails",
+//     },
+//   },
+//   {
+//     $project: {
+//       _id: 0,
+//       name: 1,
+//       email: 1,
+//       "StudentCourseDetails.name": 1,
+//       "StudentCourseDetails.duration": 1,
+//     },
+//   },
+// ]);
+
+//? lookup from "courses" side
+
+db.courses.aggregate([
   {
     $match: {},
   },
   {
     $lookup: {
-      from: "courses",
-      localField: "enrolledCourseIds",
-      foreignField: "_id",
-      as: "StudentCourseDetails",
+      from: "students",
+      localField: "_id",
+      foreignField: "enrolledCourseIds",
+      as: "StudentData",
     },
   },
   {
     $project: {
       _id: 0,
       name: 1,
-      email: 1,
-      "StudentCourseDetails.name": 1,
-      "StudentCourseDetails.duration": 1,
+      duration: 1,
+      "StudentData.name": 1,
+      "StudentData.email": 1,
     },
   },
 ]);

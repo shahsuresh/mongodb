@@ -1,0 +1,111 @@
+[{
+  "_id": {
+    "$oid": "656070d2b16daaa31169a51a"
+  },
+  "name": "Alish",
+  "hobbies": [
+    "Cardio",
+    "Swimming"
+  ],
+  "scores": [
+    {
+      "sub": "Math",
+      "point": 50
+    },
+    {
+      "sub": "Science",
+      "point": 65
+    },
+    {
+      "sub": "Math",
+      "point": 50
+    },
+    {
+      "sub": "Math",
+      "point": 50
+    }
+  ],
+  "age": 7.5,
+  "isGraduated": false,
+  "contactNumber": "4414082"
+},
+{
+  "_id": {
+    "$oid": "656070d2b16daaa31169a51b"
+  },
+  "name": "Unique",
+  "hobbies": [
+    "Gaming",
+    "Dancing"
+  ],
+  "scores": [
+    {
+      "sub": "Math",
+      "point": 55
+    },
+    {
+      "sub": "Science",
+      "point": 75
+    },
+    {
+      "sub": "Social",
+      "point": 65
+    }
+  ],
+  "age": 60,
+  "isGraduated": false,
+  "contactNumber": "4414083"
+},
+{
+  "_id": {
+    "$oid": "656070d2b16daaa31169a51c"
+  },
+  "name": "Nischal",
+  "hobbies": [
+    "Cricket"
+  ],
+  "scores": [
+    {
+      "sub": "Political Science",
+      "point": 75
+    },
+    {
+      "sub": "Science",
+      "point": 55
+    },
+    {
+      "sub": "Social",
+      "point": 55
+    }
+  ],
+  "age": 27,
+  "isGraduated": false,
+  "contactNumber": "4414084"
+},
+{
+  "_id": {
+    "$oid": "659fbbac8e46b28b92d7033c"
+  },
+  "name": "Prakash",
+  "age": 27,
+  "contactNumber": "4414084",
+  "hobbies": [
+    "Cricket",
+    "Basketball"
+  ],
+  "isGraduated": false,
+  "scores": [
+    {
+      "sub": "Political Science",
+      "point": 75
+    },
+    {
+      "sub": "Science",
+      "point": 55
+    },
+    {
+      "sub": "Social",
+      "point": 55
+    }
+  ]
+}]
