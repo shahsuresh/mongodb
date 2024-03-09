@@ -1,6 +1,6 @@
 // evaluation operator
-//? $regex
-//? expr
+//? $regex :Provides regular expression capabilities for pattern matching strings in queries.
+//? expr : use to do some operations on felids
 
 //? $regex
 

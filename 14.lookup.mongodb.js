@@ -126,7 +126,7 @@ use("relation");
 //   },
 // ]);
 
-//? lookup from "courses" side
+//? lookup from "courses" table/side
 
 db.courses.aggregate([
   {

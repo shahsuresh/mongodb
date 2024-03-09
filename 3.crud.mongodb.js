@@ -1,7 +1,7 @@
 use("daraz"); // created database named "daraz"
 
 // CRUD operation
-//? create => Add
+//? create => Add / Insert
 
 //methods=> insertOne(), insertMany()
 //? insertOne()
@@ -22,18 +22,17 @@ use("daraz"); // created database named "daraz"
 //   email: "shah@gmail.com",
 // });
 
-//find()=> get or read items from table
+//? Read operation
+// find()=> get or read items from table
 // db.product.find();
 // db.customer.find();
-
-//? Read operation
 //?methods: findOne()=>returns first item that matches the criteria,
 //find()=>returns all product that matches the condition
 
 // db.product.findOne({ name: "Mouse" });
 // db.product.find({ brand: "Dell" });
 
-//? delete operation => deletes item from table
+//? delete operation => deletes item from table/ Collection
 //methods=> deleteOne()=> deletes one data from table that matches the condition
 // db.product.deleteOne({ brand: "Dell" });
 

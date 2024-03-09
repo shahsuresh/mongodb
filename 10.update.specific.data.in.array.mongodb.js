@@ -6,16 +6,12 @@ use("imdb");
 
 // }})
 
-
 //? to update all value
 
 // db.friends.updateOne({name:"Suresh"},{
 //     $set:{
 //     "scores.$[].point":70
 // }})
-
-
-
 
 //? decrease points of all by 10
 
@@ -25,7 +21,6 @@ use("imdb");
 // }})
 // db.friends.find()
 
-
 //? update Swimming to Rafting
 
 // db.friends.updateOne({name:"Jibana",hobbies:"Swimming"},{$set:{
@@ -34,14 +29,16 @@ use("imdb");
 
 //? update items based on condition
 
-db.friends.updateOne({ name: "Jibana" }, {
+db.friends.updateOne(
+  { name: "Jibana" },
+  {
     $set: {
-        "scores.$[item].point": 75,
+      "scores.$[item].point": 75,
     },
-},
-    {
-        arrayFilters: [{ "item.point": { $gte: 50 } }]
-    });
-
+  },
+  {
+    arrayFilters: [{ "item.point": { $gte: 50 } }],
+  }
+);
 
 db.friends.find();

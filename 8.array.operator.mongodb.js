@@ -94,11 +94,11 @@ use("imdb");
 
 // db.students.find({ favoriteSingers: { $size: 2 } });
 
-//? find students who has three favourite singers
+//? find students who has three favorite singers
 
 // db.students.find({ favoriteSingers: { $size: 3 } });
 
-//? find students who have onlyone hobby
+//? find students who have only one hobby
 
 // db.students.find({ hobbies: { $size: 1 } });
 

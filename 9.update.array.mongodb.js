@@ -8,7 +8,7 @@ use("imdb");
 
 // db.friends.updateOne({ name: "Suresh" }, { $push: { hobbies: "Dancing" } });
 
-//? push multiple items in array using $each one by one
+//? push multiple items in array using "$each" one by one
 // db.friends.updateOne(
 //   { name: "Suresh" },
 //   { $push: { hobbies: { $each: ["Singing", "Riding"] } } }
@@ -25,7 +25,7 @@ use("imdb");
 
 // db.friends.updateOne(
 //   { name: "Prithvi" },
-//   { $addToSet: { hobbies: { $each: ["hiking", "Cricket"] } } }
+//   { $addToSet: { hobbies: { $each: ["Dancing", "Cricket"] } } }
 // );
 
 //?add cycling and driving to Jibana's hobbies
@@ -34,16 +34,16 @@ use("imdb");
 //   { $addToSet: { hobbies: { $each: ["Cycling", "Driving"] } } }
 // );
 
-//? add sub:English and point 61 to
-// db.friends.updateOne(
-//     { name: "Jibana" },
-//     { $addToSet: { scores: { $each: ["Cycling", "Driving"] } } }
-//   );
+//? add sub:English and point 61 to Jibana's Score
+db.friends.updateOne(
+  { name: "Jibana" },
+  { $addToSet: { scores: { sub: "English", point: 61 } } }
+);
 
 //? $pop => removes item from start and end of array
 
-// 1 => removes value from end of array
-// 1 => removes value from start of an array
+// 1 => removes value from end of array i.e last element of an array
+// -1 => removes value from start of an array i.e first element
 
 // db.friends.updateOne({ name: "Suresh" }, { $pop: { hobbies: -1 } });
 

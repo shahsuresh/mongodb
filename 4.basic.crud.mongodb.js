@@ -10,7 +10,7 @@ use("amazon");
 //   { name: "Krishna", age: "29", address: "New Road" },
 // ]);
 
-//? From all the documents, dispaly only address
+//? From all the documents, display only address
 
 // db.student.find({},{_id:0,address: 1});
 

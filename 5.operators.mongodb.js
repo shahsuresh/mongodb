@@ -50,7 +50,7 @@ use("imdb");
 //   { _id: 0, name: 1 }
 // );
 
-//? find movies whose genere is "Drama" and "Crime"
+//? find movies whose genre is "Drama" and "Crime"
 
 // db.movies.find({ $and: [{ genres: "Drama" }, { genres: "Crime" }] });
 
@@ -86,7 +86,7 @@ use("imdb");
 
 //? $not
 
-//find movies whose genre doesnot include thriller
+//find movies whose genre doesn't include thriller
 
 // db.movies.find({ genres: { $ne: "Thriller" } });
 
